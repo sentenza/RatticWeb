@@ -7,9 +7,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-17 09:20+1000\n"
-"PO-Revision-Date: 2015-03-12 17:29+0100\n"
-"Last-Translator: \n"
-"Language-Team: Daniele Scasciafratte <mte90net@gmail.com>\n"
+"PO-Revision-Date: 2015-06-30 14:28+0200\n"
+"Last-Translator: Mte90\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,12 +27,11 @@ msgstr "Password sbagliata"
 
 #: account/models.py:56
 msgid "Items per page"
-msgstr ""
+msgstr "Elementi per pagina"
 
 #: account/models.py:57
-#, fuzzy
 msgid "Favourite tags"
-msgstr "Aggiunti i tuoi tag preferito sul"
+msgstr "Tag preferiti"
 
 #: account/templates/account_changepass.html:4
 #: account/templates/password_reset_confirm.html:4
@@ -42,12 +41,12 @@ msgstr "Imposta una Nuova Password"
 #: account/templates/account_changepass.html:7
 #: account/templates/password_reset_confirm.html:8
 msgid "Please enter your new password twice."
-msgstr "Inserisci la tua nuova password due volte"
+msgstr "Inserisci la nuova password due volte"
 
 #: account/templates/account_changepass.html:8
 #: account/templates/password_reset_confirm.html:9
 msgid "So we can verify you typed it in correctly."
-msgstr "Ora possiamo verificare se hai scritto correttamente"
+msgstr "Ora possiamo verificare se hai scritto correttamente."
 
 #: account/templates/account_changepass.html:21
 msgid "Change Password"
@@ -140,7 +139,7 @@ msgstr "Email"
 #: account/templates/account_profile.html:15
 #: account/templates/account_profile.html:21
 msgid "Two Factor Authentication"
-msgstr "Autenticazione a Due Fattoriu"
+msgstr "Autenticazione a Due Fattori"
 
 #: account/templates/account_profile.html:15
 msgid "Enabled"
@@ -153,7 +152,7 @@ msgstr "Disabilitato"
 
 #: account/templates/account_profile.html:16
 msgid "Backup Codes Left"
-msgstr "Codici di backup rimanenti"
+msgstr "Codici backup rimasti"
 
 #: account/templates/account_profile.html:17
 msgid "View Codes"
@@ -203,7 +202,7 @@ msgstr "Data creazione"
 
 #: account/templates/account_profile.html:53
 msgid "Expiry date"
-msgstr ""
+msgstr "Data scadenza"
 
 #: account/templates/account_profile.html:73
 msgid "No API Keys available yet"
@@ -284,7 +283,7 @@ msgstr "Login"
 
 #: account/templates/account_tfa_login.html:8
 msgid "Enter your credentials."
-msgstr "Inserisci i tuoi dati d'accesso"
+msgstr "Inserisci i tuoi dati d'accesso."
 
 #: account/templates/account_tfa_login.html:11
 #: account/templates/account_tfa_setup.html:28
@@ -333,7 +332,7 @@ msgstr "Usa Token di Backup"
 
 #: account/templates/account_tfa_setup.html:5
 msgid "Enable Two-Factor Authentication"
-msgstr "Abilita l'autenticazione a due fattori"
+msgstr "Abilita l'Autenticazione a Due Fattori"
 
 #: account/templates/account_tfa_setup.html:7
 msgid ""
@@ -426,7 +425,7 @@ msgstr "Reset della password completato"
 
 #: account/templates/password_reset_complete.html:8
 msgid "Your password has been set. You may go ahead and log in now."
-msgstr "La tua password è stata settata.Torna indietro e loggati di nuovo."
+msgstr "La tua password è stata impostata. Torna indietro e loggati di nuovo."
 
 #: account/templates/password_reset_complete.html:9
 msgid "Log in"
@@ -512,12 +511,10 @@ msgstr ""
 
 #: cred/forms.py:33 cred/templates/cred_detail.html:70
 #: cred/templates/cred_list.html:67 cred/templates/cred_list.html.py:69
-#, fuzzy
 msgid "Owner Group"
-msgstr "Gruppo"
+msgstr "Amministratore Gruppo"
 
 #: cred/forms.py:34
-#, fuzzy
 msgid "Viewers Groups"
 msgstr "Gruppi d'accesso"
 
@@ -558,13 +555,12 @@ msgid "Tags"
 msgstr "Tags"
 
 #: cred/models.py:87
-#, fuzzy
 msgid "Icon"
-msgstr "Icone"
+msgstr "Icona"
 
 #: cred/models.py:88
 msgid "SSH key"
-msgstr ""
+msgstr "Chiave SSH"
 
 #: cred/models.py:89 cred/templates/cred_detail.html:64
 msgid "Attachment"
@@ -576,7 +572,7 @@ msgstr "Aggiunto"
 
 #: cred/models.py:212
 msgid "Changed"
-msgstr "Cambiato"
+msgstr "Modificato"
 
 #: cred/models.py:213
 msgid "Only Metadata Changed"
@@ -713,7 +709,7 @@ msgstr "Perchè non"
 
 #: cred/templates/cred_detail.html:25
 msgid "do it now"
-msgstr "fallo ora"
+msgstr "farlo ora"
 
 #: cred/templates/cred_detail.html:25
 msgid "?"
@@ -760,12 +756,11 @@ msgstr "Scarica"
 
 #: cred/templates/cred_detail.html:67
 msgid "SSH Key"
-msgstr ""
+msgstr "Chiave SSH"
 
 #: cred/templates/cred_detail.html:71 cred/templates/cred_list.html:73
-#, fuzzy
 msgid "Viewer Groups"
-msgstr "Elimina Gruppo"
+msgstr "Gruppi di Accesso"
 
 #: cred/templates/cred_detail.html:81
 msgid "Last Changed"
@@ -793,7 +788,7 @@ msgstr "Invia"
 
 #: cred/templates/cred_list.html:28 cred/templates/cred_taglist.html:8
 msgid "Add New"
-msgstr "Aggiungi Nuovo"
+msgstr "Aggiungi Password"
 
 #: cred/templates/cred_list.html:40
 msgid "Apply a Tag"
@@ -968,7 +963,7 @@ msgstr "Tedesco"
 
 #: ratticweb/settings.py:60
 msgid "Italian"
-msgstr ""
+msgstr "Italiano"
 
 #: ratticweb/templates/404.html:6
 msgid "Page not found"
@@ -1040,7 +1035,7 @@ msgstr "RatticDB Logo"
 
 #: ratticweb/templates/home.html:15
 msgid "It does passwords."
-msgstr "Fà password."
+msgstr "Gestisce password."
 
 #: ratticweb/templates/navbar.html:16
 #: staff/templates/staff_groupdetail.html:22
@@ -1279,3 +1274,4 @@ msgstr "Crea Utente"
 #: staff/templates/staff_useredit.html:6
 msgid "Edit User"
 msgstr "Modifica Utente"
+

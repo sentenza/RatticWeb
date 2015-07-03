@@ -21,7 +21,7 @@
 
     <th>
         {% trans "Action" %}
-        <a href="#filterModal" data-toggle="modal"><i class="icon-filter"></i></a>
+        <a href="#filterModal" data-toggle="modal"><i class="glyphicon glyphicon-filter"></i></a>
     </th>
 
   {% if type != 'user' %}
@@ -47,8 +47,8 @@
 {% endfor %}
 </table>
 
-<div class="pagination pagination-centered">
-  <ul>
+<div>
+  <ul class="pagination pagination-centered">
     {% if logs.has_previous %}
       <li><a href="?page={{ logs.previous_page_number }}">{% trans "Prev" %}</a></li>
     {% else %}

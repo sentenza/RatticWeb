@@ -19,7 +19,7 @@
             <input type="submit" class="btn btn-danger" value="{% trans "Confirm Delete" %}" />
         </form>
     {% else %}
-        <a class="btn" href="{% url "user_edit" viewuser.id %}">{% trans "Edit" %}</a>
+        <a class="btn btn-default" href="{% url "user_edit" viewuser.id %}">{% trans "Edit" %}</a>
         {% if hastoken %}<a class="btn btn-warning" href="{% url "staff.views.removetoken" viewuser.id %}">{% trans "Disable Two Factor" %}</a>{% endif %}
         <a class="btn btn-danger" href="{% url "staff.views.userdelete" viewuser.id %}">{% trans "Delete" %}</a>
     {% endif %}

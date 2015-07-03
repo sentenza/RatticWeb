@@ -25,22 +25,22 @@
     <tr>
       <td colspan="5">
         {% if buttons.add %}
-          <a class="btn" href="{% url "cred.views.add" %}">{% trans "Add New" %}</a>
+          <a class="btn btn-default" href="{% url "cred.views.add" %}">{% trans "Add New" %}</a>
         {% endif %}
         {% if buttons.delete %}
-          <button class="btn disabled rattic-check-enabled rattic-form-submit" data-target=".cred-list-check" data-action="{% url "cred.views.bulkdelete" %}">{% trans "Delete" %}</button>
+          <button class="btn btn-default disabled rattic-check-enabled rattic-form-submit" data-target=".cred-list-check" data-action="{% url "cred.views.bulkdelete" %}">{% trans "Delete" %}</button>
         {% endif %}
         {% if buttons.undelete %}
-          <button class="btn disabled rattic-check-enabled rattic-form-submit" data-target=".cred-list-check" data-action="{% url "cred.views.bulkundelete" %}">{% trans "Undelete" %}</button>
+          <button class="btn btn-default disabled rattic-check-enabled rattic-form-submit" data-target=".cred-list-check" data-action="{% url "cred.views.bulkundelete" %}">{% trans "Undelete" %}</button>
         {% endif %}
         {% if buttons.changeq %}
-          <button class="btn disabled rattic-check-enabled rattic-form-submit" data-target=".cred-list-check" data-action="{% url "cred.views.bulkaddtoqueue" %}">{% trans "Add to Change Queue" %}</button>
+          <button class="btn btn-default disabled rattic-check-enabled rattic-form-submit" data-target=".cred-list-check" data-action="{% url "cred.views.bulkaddtoqueue" %}">{% trans "Add to Change Queue" %}</button>
         {% endif %}
         {% if buttons.tagger %}
 		<select name="tag" class="rattic-single-tag-selector rattic-check-enabled" data-target=".cred-list-check" placeholder="{% trans "Apply a Tag" %}" data-action="{% url "cred.views.bulktagcred" %}" tabindex="-1"></select>
         {% endif %}
         {% if buttons.export and EXPORT_ENABLED %}
-          <button class="btn" href="#exportmodal" data-toggle="modal">{% trans "Download Keepass" %}</button>
+          <button class="btn btn-default" href="#exportmodal" data-toggle="modal">{% trans "Download Keepass" %}</button>
         {% endif %}
       </td>
     </tr>
@@ -50,21 +50,21 @@
       </th>
       <th>
         {% if sort == 'title' %}
-          <a href="{% url 'cred.views.list' filter value revsortdir 'title' page %}">{% trans "Title" %} {% if sortdir == 'ascending' %}<i class='icon-chevron-up'></i>{% else %}<i class='icon-chevron-down'></i>{% endif %}</a>
+          <a href="{% url 'cred.views.list' filter value revsortdir 'title' page %}">{% trans "Title" %} {% if sortdir == 'ascending' %}<i class='glyphicon glyphicon-chevron-up'></i>{% else %}<i class='glyphicon glyphicon-chevron-down'></i>{% endif %}</a>
         {% else %}
           <a href="{% url 'cred.views.list' filter value sortdir 'title' page %}">{% trans "Title" %}</a>
         {% endif %}
       </th>
       <th>
         {% if sort == 'username' %}
-          <a href="{% url 'cred.views.list' filter value revsortdir 'username' page %}">{% trans "User" %} {% if sortdir == 'ascending' %}<i class='icon-chevron-up'></i>{% else %}<i class='icon-chevron-down'></i>{% endif %}</a>
+          <a href="{% url 'cred.views.list' filter value revsortdir 'username' page %}">{% trans "User" %} {% if sortdir == 'ascending' %}<i class='glyphicon glyphicon-chevron-up'></i>{% else %}<i class='glyphicon glyphicon-chevron-down'></i>{% endif %}</a>
         {% else %}
           <a href="{% url 'cred.views.list' filter value sortdir 'username' page %}">{% trans "User" %}</a>
         {% endif %}
       </th>
       <th>
         {% if sort == 'group' %}
-          <a href="{% url 'cred.views.list' filter value revsortdir 'group' page %}">{% trans "Owner Group" %} {% if sortdir == 'ascending' %}<i class='icon-chevron-up'></i>{% else %}<i class='icon-chevron-down'></i>{% endif %}</a>
+          <a href="{% url 'cred.views.list' filter value revsortdir 'group' page %}">{% trans "Owner Group" %} {% if sortdir == 'ascending' %}<i class='glyphicon glyphicon-chevron-up'></i>{% else %}<i class='glyphicon glyphicon-chevron-down'></i>{% endif %}</a>
         {% else %}
           <a href="{% url 'cred.views.list' filter value sortdir 'group' page %}">{% trans "Owner Group" %}</a>
         {% endif %}
@@ -96,8 +96,8 @@
 </table>
 </form>
 
-<div class="pagination pagination-centered">
-  <ul>
+<div>
+  <ul class="pagination pagination-centered">
     {% if credlist.has_previous %}
     <li><a href="{% url "cred.views.list" filter value sortdir sort credlist.previous_page_number %}">{% trans "Prev" %}</a></li>
     {% else %}
@@ -125,4 +125,3 @@
 {% include "cred_taglist.html" with tags=tag only %}
 {% endif %}
 {% endblock %}
-

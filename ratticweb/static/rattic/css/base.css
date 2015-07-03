@@ -6,6 +6,14 @@
   display: none;
 }
 
+.center {
+    text-align:center:
+}
+
+.col-lg-10 h1 {
+    margin-left:-15px:
+}
+
 div.copybutton {
   position: relative;
   display: inline;

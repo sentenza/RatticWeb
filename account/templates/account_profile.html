@@ -30,7 +30,7 @@
 <input class="btn btn-primary" type="submit" name="submit" value="{% trans "Save Changes" %}" />
 
 {% if ALLOWPWCHANGE %}
-    <a class="btn" href="{% url "password_change" %}">
+    <a class="btn btn-default" href="{% url "password_change" %}">
 	    {% if user.has_usable_password %}
 	        {% trans "Change password" %}
 		{% else %}
@@ -44,7 +44,7 @@
 <table class="table table-striped table-bordered table-condensed">
   <thead>
     <tr><td colspan="3">
-        <a href="{% url 'account.views.newapikey' %}" class="btn">{% trans "New API Key" %}</a>
+        <a href="{% url 'account.views.newapikey' %}" class="btn btn-default">{% trans "New API Key" %}</a>
     </td></tr>
     <tr>
       <th>&nbsp;</th>
@@ -58,7 +58,7 @@
       <tr>
         <td>
           <a href="{% url 'account.views.deleteapikey' key.id %}" class="btn btn-danger">
-            <i class="icon-remove"></i>
+            <i class="glyphicon glyphicon-remove"></i>
           </a>
         </td>
         <td>{{ key.name }}</td>

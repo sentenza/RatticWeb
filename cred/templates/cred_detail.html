@@ -26,11 +26,11 @@
 {% endif %}
 {% if cred.is_latest and not readonly %}
 <div class="btn-group">
-    <a class="btn" href="{% url 'cred.views.edit' cred.id %}">{% trans "Edit" %}</a>
-    <a class="btn" href="{% url 'cred.views.list' 'history' cred.id 'ascending' 'id' %}">{% trans "History" %}</a>
+    <a class="btn btn-default" href="{% url 'cred.views.edit' cred.id %}">{% trans "Edit" %}</a>
+    <a class="btn btn-default" href="{% url 'cred.views.list' 'history' cred.id 'ascending' 'id' %}">{% trans "History" %}</a>
     {% if not delete %}<a class="btn btn-danger" href="{% url 'cred.views.delete' cred.id %}">{% trans "Delete" %}</a>{% endif %}
     {% if not cred.is_deleted %}
-        <a class="btn" href="{% url 'cred.views.addtoqueue' cred.id %}">{% trans "Add to Change Queue" %}</a>
+        <a class="btn btn-default" href="{% url 'cred.views.addtoqueue' cred.id %}">{% trans "Add to Change Queue" %}</a>
     {% endif %}
     {% if cred.is_deleted and not undelete %}
     <a class="btn btn-success" href="{% url 'staff.views.credundelete' cred.id %}">{% trans "Undelete" %}</a>

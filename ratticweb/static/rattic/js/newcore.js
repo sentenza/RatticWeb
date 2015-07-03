@@ -171,7 +171,7 @@ var RATTIC = (function ($, ZeroClipboard) {
     target.trigger('getdata');
     button.trigger('show');
     button.data('status', 'shown');
-    button.html('<i class="icon-eye-close"></i>');
+    button.html('<i class="glyphicon glyphicon-icon-eye-close"></i>');
     target.removeClass('passhidden');
     if (target.prop('tagName') == 'INPUT') {
       target.attr('type', 'text');
@@ -182,7 +182,7 @@ var RATTIC = (function ($, ZeroClipboard) {
   function _passShowButtonHide(button, target) {
     button.trigger('hide');
     button.data('status', 'hidden');
-    button.html('<i class="icon-eye-open"></i>');
+    button.html('<i class="glyphicon glyphicon-eye-open"></i>');
     target.addClass('passhidden');
     if (target.prop('tagName') == 'INPUT') {
       target.attr('type', 'password');
@@ -537,8 +537,8 @@ var RATTIC = (function ($, ZeroClipboard) {
 
       /* Create our button */
 
-      button.addClass('btn btn-password-visibility');
-      button.html('<i class="icon-eye-open"></i>');
+      button.addClass('btn btn-default btn-password-visibility');
+      button.html('<i class="glyphicon glyphicon-eye-open"></i>');
       button.data('status', 'hidden');
       button.data('target', me);
       button.on('click', _passShowButtonClick);
@@ -550,7 +550,7 @@ var RATTIC = (function ($, ZeroClipboard) {
 
   /* Makes a button show or hide a span */
   my.controls.spanShowHideButton = function (inputs) {
-    inputs.html('<i class="icon-eye-open"></i>');
+    inputs.html('<i class="glyphicon glyphicon-eye-open"></i>');
     inputs.data('status', 'hidden');
     inputs.on('click', _passShowButtonClick);
   };
@@ -565,8 +565,8 @@ var RATTIC = (function ($, ZeroClipboard) {
       _wrapInputAppend(me);
 
       /* Create our button */
-      button.addClass('btn');
-      button.html('<i class="icon-repeat"></i>');
+      button.addClass('btn btn-default');
+      button.html('<i class="glyphicon glyphicon-icon-repeat"></i>');
       button.attr('data-toggle', 'modal');
       button.attr('id', 'genpass');
       button.attr('role', 'button');

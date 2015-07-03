@@ -11,9 +11,9 @@
     <div class="navbar-header">
         <a class="navbar-brand" href="{% url_root %}"><img class="logo" src="{% static rattic_icon %}" /><span class="hidden-xs"> {% trans "RatticDB" %}</span></a>
     </div>
-    <nav class="navbar-inner">
+    <nav class="nav">
 
-        <ul class="nav navbar-nav visible-md">
+        <ul class="nav navbar-nav visible-md visible-lg">
             <li {% if pageurl == cred_views_list %}class="active"{% endif %}>
               <a href="{{ cred_views_list }}">{% trans "Passwords" %}</a>
             </li>

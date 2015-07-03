@@ -34,12 +34,12 @@
 <div id="wrap">
     <div class="container-fluid">
          {% include "navbar.html" %}
-         <div class="row-fluid">
-              <div class="span2 hidden-phone">
+         <div class="row">
+              <div class="col-lg-2 hidden-xs">
                   {% include "sidebar.html" %}
               </div>
               {% block self_span_content %}
-                  <div class="span10">
+                  <div class="col-lg-10">
                       {% block content %}{% endblock %}
                   </div>
               {% endblock %}

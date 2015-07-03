@@ -73,7 +73,7 @@ a#hidepass {
 img.logo {
     width: 16px;
     height: 16px;
-    float:left:
+    float:left;
 }
 
 img.biglogo {
@@ -83,6 +83,10 @@ img.biglogo {
 
 .container-fluid .credit {
     margin: 20px 0;
+}
+
+.rattic-icon-clickable {
+    cursor:pointer;
 }
 
 .creddescription {

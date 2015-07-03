@@ -171,7 +171,7 @@ var RATTIC = (function ($, ZeroClipboard) {
     target.trigger('getdata');
     button.trigger('show');
     button.data('status', 'shown');
-    button.html('<i class="glyphicon glyphicon-icon-eye-close"></i>');
+    button.html('<i class="glyphicon glyphicon-eye-close"></i>');
     target.removeClass('passhidden');
     if (target.prop('tagName') == 'INPUT') {
       target.attr('type', 'text');
@@ -566,7 +566,7 @@ var RATTIC = (function ($, ZeroClipboard) {
 
       /* Create our button */
       button.addClass('btn btn-default');
-      button.html('<i class="glyphicon glyphicon-icon-repeat"></i>');
+      button.html('<i class="glyphicon glyphicon-repeat"></i>');
       button.attr('data-toggle', 'modal');
       button.attr('id', 'genpass');
       button.attr('role', 'button');

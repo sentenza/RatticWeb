@@ -99,6 +99,16 @@ def userdelete(request, uid):
         return HttpResponseRedirect(reverse('staff.views.home'))
     return render(request, 'staff_userdetail.html', {'viewuser': user, 'delete': True})
 
+@rattic_staff_required
+def usertogglestatus(request, uid):
+    user = get_object_or_404(User, pk=uid)
+    user.is_active = not user.is_active
+    user.save()
+
+    if not user.is_active:
+        return HttpResponseRedirect(reverse('cred.views.list', args=('changeadvice', uid)))
+    else:
+        return HttpResponseRedirect(reverse('staff.views.home'))
 
 @rattic_staff_required
 def audit(request, by, byarg):

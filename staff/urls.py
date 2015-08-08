@@ -33,6 +33,7 @@ if not settings.USE_LDAP_GROUPS:
         url(r'^groupdelete/(?P<gid>\d+)/$', 'groupdelete'),
         url(r'^useredit/(?P<pk>\d+)/$', UpdateUser.as_view(), name="user_edit"),
         url(r'^userdelete/(?P<uid>\d+)/$', 'userdelete'),
+        url(r'^usertogglestatus/(?P<uid>\d+)/$', 'usertogglestatus'),
     )
 
 # User add is disabled only when LDAP config exists

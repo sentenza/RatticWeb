@@ -5,7 +5,7 @@
 {% block content %}
 {% if delete %}
 <h1>{% trans "Delete Group" %}: {{ group.name }}</h1>
-<div class="alert alert-error">{% blocktrans %}Deleting this group will delete every password underneath it.{% endblocktrans %}</div>
+<div class="alert alert-danger"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>{% blocktrans %}Deleting this group will delete every password underneath it.{% endblocktrans %}</div>
 {% else %}
 <h1>{% trans "Group" %} {{ group.name }}</h1>
 {% if not USE_LDAP_GROUPS %}

@@ -4,7 +4,8 @@
 
 {% block content %}
 {% if delete %}
-<div class="alert alert-error">
+<div class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   {% blocktrans %}
     Deleting this user will remove any associated auditlogs, maybe deactivate
     their account instead?

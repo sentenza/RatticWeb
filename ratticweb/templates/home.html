@@ -5,7 +5,8 @@
 
 {% block content %}
 {% if form.errors %}
-<div id="loginfailed" class="alert alert-error">
+<div id="loginfailed" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
     {% blocktrans %}Your username and password didn't match. Please try again.{% endblocktrans %}
 </div>
 {% endif %}
